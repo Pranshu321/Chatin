@@ -27,7 +27,7 @@ h3 {
 	font-size: 1.5rem;
 }
 button {
-	background: #1fdff5;
+	background: #FFB6B9;
 	border-radius: 8px;
 	cursor: pointer;
 	transition: background 0.3s ease;
@@ -39,7 +39,7 @@ button:hover {
 }
 button:disabled {
 	cursor: default;
-	background: #698ea5;
+	background: #FFB6B9;
 }
 .centered-form {
 	display: flex;
@@ -47,8 +47,8 @@ button:disabled {
 	height: 100vh;
 	width: 100vw;
 	justify-content: center;
-	background-color: #7ee8fa;
-	background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+	background-color: #61C0BF;
+	/* background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%); */
 }
 .centered-form__form {
 	background-color: whitesmoke;
@@ -82,12 +82,12 @@ button:disabled {
 	overflow-y: scroll;
 	width: 260px;
 	height: 100vh;
-	background-color: #20bf55;
-background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+	background-color: #61C0BF;
+    background-image: linear-gradient(315deg, #FFB6B9 0%, #BBDED6 64%);
 }
 .chat__footer,
 .chat__sidebar li {
-	background-color: #7FF6A2;
+	background-color: #61C0BF;
 	padding: 10px;
 }
 .chat__sidebar h3 {
@@ -105,8 +105,8 @@ background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
 	flex-direction: column;
     /* background-color: #7ee8fa;
     background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%); */
-	background-color: #20bf55;
-background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+	background-color: #61C0BF;
+background-image: linear-gradient(315deg, #FFB6B9 0%, #BBDED6 74%);
 	height: 100vh;
 	width: 100%;
 }
@@ -120,7 +120,7 @@ background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
 	display: flex;
 	flex-shrink: 0;
 	background-color: #20bf55;
-background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+background-image: linear-gradient(315deg, #FFB6B9 0%, #BBDED6 74%);
 	
 }
 .chat__footer form {
@@ -138,7 +138,7 @@ background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
 }
 .message {
 	padding: 10px;
-	background-color: #7FF6A2;
+	background-color: #FFB6B9	;
 	border-radius: 12px;
 	margin-bottom: 20px;
 	min-width: 50%;

@@ -8,7 +8,7 @@ const {isRealString} = require('./utils/isRealString');
 const {Users} = require('./utils/users');
 
 const publicPath = path.join(__dirname, '/../public');
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
 let app = express();
 let server = http.createServer(app);
 let io = socketIO(server);
@@ -29,7 +29,7 @@ io.on('connection', (socket) => {
     users.addUser(socket.id, params.name, params.room);
 
     io.to(params.room).emit('updateUsersList', users.getUserList(params.room));
-    socket.emit('newMessage', generateMessage('Admin', `Welcome to ${params.room}!`));
+    socket.emit('newMessage', generateMessage('Admin', `Welcome to ${params.room}! , Now you can chat anonymously`));
 
     socket.broadcast.to(params.room).emit('newMessage', generateMessage('Admin', "New User Joined!"));
 
