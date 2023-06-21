@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, inital-scale=1, user-scalable=no">
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="shortcut icon"
-    href="https://user-images.githubusercontent.com/86917304/178055146-2a353d23-d847-48f1-89ec-abd5d404949e.png"
-    type="image/x-icon">
-  <title>Welisten | Chat</title>
-</head>
-<body class="chat">
-
-  <div class="chat__sidebar">
-    <h3 style="color: black;">Users Active</h3>
-    <div id="users"></div>
-  </div>
-
-  <div class="chat__main">
-    <ol id="messages" class="chat__messages"></ol>
-
-    <div class="chat__footer">
-      <form id="message-form">
-        <input name="message" type="text" placeholder="Message" autofocus autocomplete="off" />
-        <button id="submit-btn" style="background-color:#BBDED6; border-radius: 10px; ">Send</button>
-      </form>
-      <!-- <button id="send-location" style="background-color:#BBDED6; border-radius: 10px;">Send location</button> -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, inital-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- href="https://user-images.githubusercontent.com/86917304/178055146-2a353d23-d847-48f1-89ec-abd5d404949e.png" -->
+    <link
+      rel="shortcut icon"
+      href="https://user-images.githubusercontent.com/86917304/226326061-cd601c44-8c19-4f0c-bd57-53274374cd6c.png"
+      type="image/x-icon"
+    />
+    <title>ResQmate | Chat</title>
+  </head>
+  <body class="chat">
+    <div class="chat__sidebar">
+      <h3 style="color: #ee4444">Users Active</h3>
+      <div id="users"></div>
     </div>
-  </div>
 
-  <script id="message-template" type="text/template">
+    <div class="chat__main">
+      <ol id="messages" class="chat__messages"></ol>
+
+      <div class="chat__footer">
+        <form id="message-form">
+          <input
+            name="message"
+            type="text"
+            placeholder="Message"
+            autofocus
+            autocomplete="off"
+          />
+          <button
+            id="submit-btn"
+            style="background-color: #ee4444; border-radius: 10px"
+          >
+            Send
+          </button>
+        </form>
+        <button
+          id="send-location"
+          style="background-color: #ee4444; border-radius: 10px"
+        >
+          Send location
+        </button>
+      </div>
+    </div>
+
+    <script id="message-template" type="text/template">
       <li class="message">
         <div class="message__title">
           <h4>{{from}}</h4>
@@ -40,7 +61,7 @@
       </li>
     </script>
 
-  <script id="location-message-template" type="text/template">
+    <script id="location-message-template" type="text/template">
       <li class="message">
         <div class="message__title">
           <h4>{{from}}</h4>
@@ -52,9 +73,9 @@
       </li>
     </script>
 
-  <script src="/socket.io/socket.io.js"></script>
-  <script type="text/javascript" src="/js/chat.js"></script>
-  <script type="text/javascript" src="/js/libs/moment.js"></script>
-  <script type="text/javascript" src="/js/libs/mustache.js"></script>
-</body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/js/chat.js"></script>
+    <script type="text/javascript" src="/js/libs/moment.js"></script>
+    <script type="text/javascript" src="/js/libs/mustache.js"></script>
+  </body>
 </html>

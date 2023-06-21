@@ -27,15 +27,16 @@ h3 {
 	font-size: 1.5rem;
 }
 button {
-	background: #FFB6B9;
+	background: #EE4444;
 	border-radius: 8px;
 	cursor: pointer;
 	transition: background 0.3s ease;
-	color: black;
+	color: white;
+	font-weight: 600;
 }
 button:hover {
-	background: #7ee9f5;
-	color: black;
+	background: #f65959;
+	color: white;
 }
 button:disabled {
 	cursor: default;
@@ -47,7 +48,7 @@ button:disabled {
 	height: 100vh;
 	width: 100vw;
 	justify-content: center;
-	background-color: #61C0BF;
+	background-color: #FFEDD5;
 	/* background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%); */
 }
 .centered-form__form {
@@ -82,13 +83,15 @@ button:disabled {
 	overflow-y: scroll;
 	width: 260px;
 	height: 100vh;
-	background-color: #61C0BF;
-    background-image: linear-gradient(315deg, #FFB6B9 0%, #BBDED6 64%);
+	background-color: #FFEDD5;
+    /* background-image: linear-gradient(315deg, #FFB6B9 0%, #BBDED6 64%); */
 }
 .chat__footer,
 .chat__sidebar li {
-	background-color: #61C0BF;
+	background-color: #EE4444;
 	padding: 10px;
+	color: white;
+	font-weight: 600;
 }
 .chat__sidebar h3 {
 	color: #e6eaee;
@@ -105,8 +108,8 @@ button:disabled {
 	flex-direction: column;
     /* background-color: #7ee8fa;
     background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%); */
-	background-color: #61C0BF;
-background-image: linear-gradient(315deg, #FFB6B9 0%, #BBDED6 74%);
+	background-color: #FFEDD5;
+/* background-image: linear-gradient(315deg, #FFB6B9 0%, #BBDED6 74%); */
 	height: 100vh;
 	width: 100%;
 }
@@ -114,13 +117,16 @@ background-image: linear-gradient(315deg, #FFB6B9 0%, #BBDED6 74%);
 	flex-grow: 1;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	padding: 10px;
 }
 .chat__footer {
 	display: flex;
 	flex-shrink: 0;
-	background-color: #20bf55;
-background-image: linear-gradient(315deg, #FFB6B9 0%, #BBDED6 74%);
+	/* background-color: #20bf55; */
+	background-color: #FFEDD5;
+    /* background-image: linear-gradient(315deg, #FFB6B9 0%, #BBDED6 74%); */
 	
 }
 .chat__footer form {
@@ -138,7 +144,7 @@ background-image: linear-gradient(315deg, #FFB6B9 0%, #BBDED6 74%);
 }
 .message {
 	padding: 10px;
-	background-color: #FFB6B9	;
+	background-color: #EE4444	;
 	border-radius: 12px;
 	margin-bottom: 20px;
 	min-width: 50%;
@@ -147,7 +153,8 @@ background-image: linear-gradient(315deg, #FFB6B9 0%, #BBDED6 74%);
 .message__title {
 	display: flex;
 	margin-bottom: 5px;
-	
+	color: white;
+	letter-spacing: 1px;	
 }
 .message__title h4 {
 	font-weight: 600;
@@ -155,7 +162,10 @@ background-image: linear-gradient(315deg, #FFB6B9 0%, #BBDED6 74%);
 	
 }
 .message__title span {
-	color: rgb(255, 138, 4);
+	/* color: rgb(255, 138, 4); */
+	color: #B7B707;
+	font-weight: 700;
+	letter-spacing: 1.5px;
 }
 @media (max-width: 600px) {
 	* {
